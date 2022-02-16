@@ -6,6 +6,7 @@ export const PokeActionTypes = {
   SEARCH_POKEMON_SUCCESS: 'pokemon/SEARCH_POKEMON_SUCCESS',
   SEARCH_POKEMON_FAILURE: 'pokemon/SEARCH_POKEMON_FAILURE',
   GET_POKEMON_INFO: 'pokemon/GET_POKEMON_INFO',
+  //In progress
   GET_POKEMONS_BY_TYPE: 'pokemon/GET_POKEMONS_BY_TYPE',
   GET_POKEMONS_BY_TYPE_SUCCESS: 'pokemon/GET_POKEMONS_BY_TYPE_SUCCESS',
   GET_POKEMONS_BY_TYPE_FAILURE: 'pokemon/GET_POKEMONS_BY_TYPE_FAILURE',
@@ -53,7 +54,7 @@ export const Creators = {
     };
   },
 
-  //
+  //In progress
   getPokemonsByType(value) {
     return {
       type: PokeActionTypes.GET_POKEMONS_BY_TYPE,

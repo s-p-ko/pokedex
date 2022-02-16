@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 
+// import backgroundImage from '../../../assets/img/anyName.png';
 import { Text } from '../../../components/elements';
 
 export const bgType = {
@@ -59,7 +60,35 @@ export const bgType = {
   `,
 };
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  border-radius: 10px;
+  padding: 10px;
+  height: 130px;
+  ${(props) =>
+    props.loading !== 'loading' &&
+    css`
+      ${'' /* background: url(${backgroundImage}); */}
+    `}
 
-export const Title = styled(Text)``;
-export const NumberStyled = styled.span``;
+  ${(props) => bgType[props.color || 'default']}
+  cursor:pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+export const Title = styled(Text)`
+  font-size: 25px;
+  font-weight: bold;
+  color: #000066;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 170px;
+`;
+export const NumberStyled = styled.span`
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+`;

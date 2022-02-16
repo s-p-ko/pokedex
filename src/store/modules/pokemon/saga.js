@@ -94,5 +94,6 @@ export function* getPokemonsByType(action) {
 export default function* saga() {
   yield takeLatest(PokeActionTypes.GET_POKEMON, getPokemons);
   yield takeLatest(PokeActionTypes.SEARCH_POKEMON, searchPokemons);
+  //In progress
   yield takeLatest(PokeActionTypes.GET_POKEMONS_BY_TYPE, getPokemonsByType);
 }

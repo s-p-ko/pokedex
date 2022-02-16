@@ -58,6 +58,24 @@ export const bgType = {
   `,
 };
 
-export const Label = styled.span``;
+export const Label = styled.span`
+  font-size: 16px;
+  padding: 4px;
+  ${(props) => bgType[props.color || 'rock']}
+  color: #423f3f;
+  text-transform: capitalize;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  min-width: 50px;
+  text-align: center;
+`;
 
-export const Box = styled.div``;
+export const Box = styled.div`
+  display: inline-grid;
+  grid-gap: 5px 10px;
+  grid-area: auto;
+  grid-auto-flow: column;
+  margin-top: 10px;
+`;
